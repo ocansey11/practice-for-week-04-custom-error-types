@@ -30,7 +30,7 @@ describe("MaximumLengthExceededError", () => {
         expect(error.message).to.eq('Maximum length exceeded by 5');
       });
     });
-  
+
     context("when an excessLength is NOT passed in", () => {
       it("should set the message of the error to be 'Maximum length exceeded'", () => {
         const error = new MaximumLengthExceededError();
